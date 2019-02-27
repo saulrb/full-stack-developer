@@ -17,8 +17,12 @@ public class Region {
 	private String state;
 	private String cityId;
 	private String city;
+	private Float latitude;
+	private Float longitude;
 	private List<Ticket> tickets;
+	private Integer ticketCount;
 	
+
 	/**
 	 * @return the id
 	 */
@@ -28,8 +32,9 @@ public class Region {
 	/**
 	 * @param id the id to set
 	 */
-	public void setId(String id) {
+	public Region setId(String id) {
 		this.id = id;
+		return this;
 	}
 	/**
 	 * @return the name
@@ -40,8 +45,9 @@ public class Region {
 	/**
 	 * @param name the name to set
 	 */
-	public void setName(String name) {
+	public Region setName(String name) {
 		this.name = name;
+		return this;
 	}
 	/**
 	 * @return the stateId
@@ -52,8 +58,9 @@ public class Region {
 	/**
 	 * @param stateId the stateId to set
 	 */
-	public void setStateId(String stateId) {
+	public Region setStateId(String stateId) {
 		this.stateId = stateId;
+		return this;
 	}
 	/**
 	 * @return the state
@@ -64,8 +71,9 @@ public class Region {
 	/**
 	 * @param state the state to set
 	 */
-	public void setState(String state) {
+	public Region setState(String state) {
 		this.state = state;
+		return this;
 	}
 	/**
 	 * @return the cityId
@@ -76,8 +84,9 @@ public class Region {
 	/**
 	 * @param cityId the cityId to set
 	 */
-	public void setCityId(String cityId) {
+	public Region setCityId(String cityId) {
 		this.cityId = cityId;
+		return this;
 	}
 	/**
 	 * @return the city
@@ -88,8 +97,35 @@ public class Region {
 	/**
 	 * @param city the city to set
 	 */
-	public void setCity(String city) {
+	public Region setCity(String city) {
 		this.city = city;
+		return this;
+	}
+	/**
+	 * @return the latitude
+	 */
+	public Float getLatitude() {
+		return latitude;
+	}
+	/**
+	 * @param latitude the latitude to set
+	 */
+	public Region setLatitude(Float latitude) {
+		this.latitude = latitude;
+		return this;
+	}
+	/**
+	 * @return the longitude
+	 */
+	public Float getLongitude() {
+		return longitude;
+	}
+	/**
+	 * @param longitude the longitude to set
+	 */
+	public Region setLongitude(Float longitude) {
+		this.longitude = longitude;
+		return this;
 	}
 	/**
 	 * @return the tickets
@@ -100,8 +136,22 @@ public class Region {
 	/**
 	 * @param tickets the tickets to set
 	 */
-	public void setTickets(List<Ticket> tickets) {
+	public Region setTickets(List<Ticket> tickets) {
 		this.tickets = tickets;
+		return this;
 	}
 	
+	/**
+	 * @return the ticketCount
+	 */
+	public Integer getTicketCount() {
+		return ticketCount;
+	}
+	/**
+	 * @param ticketCount the ticketCount to set
+	 */
+	public Region setTicketCount(Integer ticketCount) {
+		this.ticketCount = ticketCount;
+		return this;
+	}
 }

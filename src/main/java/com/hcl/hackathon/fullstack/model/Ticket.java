@@ -24,8 +24,9 @@ public class Ticket {
 	/**
 	 * @param issueReported the issueReported to set
 	 */
-	public void setIssueReported(String issueReported) {
+	public Ticket setIssueReported(String issueReported) {
 		this.issueReported = issueReported;
+		return this;
 	}
 	/**
 	 * @return the ticketNumber
@@ -36,8 +37,9 @@ public class Ticket {
 	/**
 	 * @param ticketNumber the ticketNumber to set
 	 */
-	public void setTicketNumber(String ticketNumber) {
+	public Ticket setTicketNumber(String ticketNumber) {
 		this.ticketNumber = ticketNumber;
+		return this;
 	}
 	/**
 	 * @return the ticketStatus
@@ -48,8 +50,9 @@ public class Ticket {
 	/**
 	 * @param ticketStatus the ticketStatus to set
 	 */
-	public void setTicketStatus(String ticketStatus) {
+	public Ticket setTicketStatus(String ticketStatus) {
 		this.ticketStatus = ticketStatus;
+		return this;
 	}
 	/**
 	 * @return the issueDate
@@ -60,8 +63,9 @@ public class Ticket {
 	/**
 	 * @param issueDate the issueDate to set
 	 */
-	public void setIssueDate(Date issueDate) {
+	public Ticket setIssueDate(Date issueDate) {
 		this.issueDate = issueDate;
+		return this;
 	}
 	/**
 	 * @return the priority
@@ -72,8 +76,9 @@ public class Ticket {
 	/**
 	 * @param priority the priority to set
 	 */
-	public void setPriority(String priority) {
+	public Ticket setPriority(String priority) {
 		this.priority = priority;
+		return this;
 	}
 	
 	
