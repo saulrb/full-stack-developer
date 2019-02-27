@@ -1,6 +1,11 @@
+
+package com.hcl.hackathon.fullstack.service.imp;
+
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+
+import org.springframework.stereotype.Service;
 
 import com.hcl.hackathon.fullstack.model.FindRegion;
 import com.hcl.hackathon.fullstack.model.Region;
@@ -15,6 +20,7 @@ import com.hcl.hackathon.fullstack.service.FindRegionService;
  * @author saul
  *
  */
+@Service
 public class FindRegionServiceMockImp implements FindRegionService {
 
 	/* (non-Javadoc)
